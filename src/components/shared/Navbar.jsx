@@ -29,7 +29,7 @@ const navItems =[
 
                 <ul className='flex justify-between items-center gap-8'>
                     {
-                      navItems.map ((item)=> <MyNavLink to={item.path}>{item.text}</MyNavLink>)  
+                      navItems.map ((item,ind)=> <MyNavLink to={item.path} key={ind}>{item.text}</MyNavLink>)  
                     }
                 </ul>
                 
